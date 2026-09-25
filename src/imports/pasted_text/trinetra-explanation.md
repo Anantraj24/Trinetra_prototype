@@ -2061,13 +2061,13 @@ That is the cleanest explanation of what changed from Atithi → TRINETRA.
 
 
 
-So write a prompt, so that I can give it to Figma, the AI website generating platform, through which it can add the new things. Do not ask it to remove the old things. Let them stay, but the new things which we have in our Trydra app. And please tell the application to change the name first, from Oditate to this new one.
+So write a prompt, so that I can give it to the AI website generating platform, through which it can add the new things. Do not ask it to remove the old things. Let them stay, but the new things which we have in our Trydra app. And please tell the application to change the name first, from Oditate to this new one.
 
-Yes. The best approach is to tell Figma AI to keep the existing Atithi website completely intact, rename it to TRINETRA, and then layer the new TRINETRA features on top of the existing product rather than redesigning/removing everything.
+Yes. The best approach is to tell the AI builder to keep the existing Atithi website completely intact, rename it to TRINETRA, and then layer the new TRINETRA features on top of the existing product rather than redesigning/removing everything.
 
 Here is a ready-to-paste prompt:
 
-Figma AI Prompt
+AI Generation Prompt
 IMPORTANT: First rename the entire existing application from “ATITHI” to “TRINETRA”.
 
 New full name:
@@ -2698,7 +2698,7 @@ Keep the existing Atithi features available as supporting tourism and safety fea
 The final product name must be TRINETRA, not Atithi.
 
 One important thing
-I deliberately wrote "don't remove anything" very strongly because Figma AI may otherwise interpret the new concept as a complete redesign and start deleting the old tourism features.
+I deliberately wrote "don't remove anything" very strongly because the AI may otherwise interpret the new concept as a complete redesign and start deleting the old tourism features.
 
 The intended structure should be:
 
@@ -2719,11 +2719,11 @@ b767bf2c-365c-4258-8f57-7081718b9022.png
 28b1a297-2c62-4a55-a751-8523c6029107.png
 df3079de-4df6-411d-bb18-53c595a9361b.png
 ac9acdca-08e5-4350-b3cf-cb7583d28013.png
-to Improved the prompt. I have taken screenshots from that original article. detailed prompt And another thing you can see that in first, third, and fifth page, they have used light color. But in even pages they have used darker colors. I want they all look like the first, third, and fifth pages. write proampt for figmaaaaaaaaaaaaaaa nothing to generate
+to Improved the prompt. I have taken screenshots from that original article. detailed prompt And another thing you can see that in first, third, and fifth page, they have used light color. But in even pages they have used darker colors. I want they all look like the first, third, and fifth pages. write prompt for styling generator nothing to generate
 
-Absolutely. I can see what happened from the screenshots. The features are already being added, but Figma has created a visual inconsistency: some screens are light and others are dark. You want all screens to follow the light, clean visual language of the 1st, 3rd and 5th screenshots, while keeping the existing Atithi features and the newly added TRINETRA features.
+Absolutely. I can see what happened from the screenshots. The features are already being added, but there is a visual inconsistency: some screens are light and others are dark. You want all screens to follow the light, clean visual language of the 1st, 3rd and 5th screenshots, while keeping the existing Atithi features and the newly added TRINETRA features.
 
-Paste this entire prompt into Figma Make's “Ask for changes”:
+Paste this entire prompt into the UI editor's “Ask for changes”:
 
 ↓
 Rescue Capsule + Evidence Timeline

@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Progress } from "./ui/progress";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 import { 
   LayoutDashboard, 
   Users, 
@@ -293,7 +293,7 @@ export function Dashboard() {
                   <div className="relative group cursor-pointer">
                     <div className="aspect-video rounded-lg overflow-hidden bg-slate-800">
                       <ImageWithFallback 
-                        src="https://images.unsplash.com/photo-1568644559664-e4a5735c37ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMG1vdW50YWlucyUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NTcxODMwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        src="https://images.unsplash.com/photo-1568644559664-e4a5735c37ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMG1vdW50YWlucyUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NTcxODMwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
                         alt="Northeast India Mountains"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -308,7 +308,7 @@ export function Dashboard() {
                   <div className="relative group cursor-pointer">
                     <div className="aspect-video rounded-lg overflow-hidden bg-slate-800">
                       <ImageWithFallback 
-                        src="https://images.unsplash.com/photo-1685948704813-da5c2f351167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3NhbSUyMHRlYSUyMGdhcmRlbnxlbnwxfHx8fDE3NTcxODMwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        src="https://images.unsplash.com/photo-1685948704813-da5c2f351167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3NhbSUyMHRlYSUyMGdhcmRlbnxlbnwxfHx8fDE3NTcxODMwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
                         alt="Assam Tea Gardens"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -323,7 +323,7 @@ export function Dashboard() {
                   <div className="relative group cursor-pointer">
                     <div className="aspect-video rounded-lg overflow-hidden bg-slate-800">
                       <ImageWithFallback 
-                        src="https://images.unsplash.com/photo-1608884941702-37653a75a725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWdoYWxheWElMjB3YXRlcmZhbGxzfGVufDF8fHx8MTc1NzE4MzA4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                        src="https://images.unsplash.com/photo-1608884941702-37653a75a725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWdoYWxheWElMjB3YXRlcmZhbGxzfGVufDF8fHx8MTc1NzE4MzA4MXww&ixlib=rb-4.1.0&q=80&w=1080"
                         alt="Meghalaya Waterfalls"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />

@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { Badge as UIBadge } from "./ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
 import { ProfilePage } from "./ProfilePage";
 import { EnhancedMapsPage } from "./EnhancedMapsPage";
@@ -108,7 +108,7 @@ const hotelBookings = [
     status: 'confirmed',
     roomType: 'Deluxe Suite',
     nights: 3,
-    image: 'https://images.unsplash.com/photo-1607712617949-8c993d290809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MXx8fHwxNzU3MTQ4Nzg1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    image: 'https://images.unsplash.com/photo-1607712617949-8c993d290809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MXx8fHwxNzU3MTQ4Nzg1fDA&ixlib=rb-4.1.0&q=80&w=1080'
   },
   {
     id: 2,
@@ -119,7 +119,7 @@ const hotelBookings = [
     status: 'pending',
     roomType: 'Mountain View',
     nights: 3,
-    image: 'https://images.unsplash.com/photo-1672560045744-17f136d4a21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNvcnQlMjBub3J0aGVhc3QlMjBpbmRpYXxlbnwxfHx8fDE3NTcxODQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    image: 'https://images.unsplash.com/photo-1672560045744-17f136d4a21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNvcnQlMjBub3J0aGVhc3QlMjBpbmRpYXxlbnwxfHx8fDE3NTcxODQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080'
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ const hotelBookings = [
     status: 'cancelled',
     roomType: 'Safari Lodge',
     nights: 3,
-    image: 'https://images.unsplash.com/photo-1672560045744-17f136d4a21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNvcnQlMjBub3J0aGVhc3QlMjBpbmRpYXxlbnwxfHx8fDE3NTcxODQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    image: 'https://images.unsplash.com/photo-1672560045744-17f136d4a21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNvcnQlMjBub3J0aGVhc3QlMjBpbmRpYXxlbnwxfHx8fDE3NTcxODQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080'
   }
 ];
 
@@ -141,7 +141,7 @@ const hotelsToRate = [
     location: 'Shillong, Meghalaya',
     stayDate: 'Nov 2024',
     currentRating: 0,
-    image: 'https://images.unsplash.com/photo-1607712617949-8c993d290809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MXx8fHwxNTY3Nzg0ODYwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    image: 'https://images.unsplash.com/photo-1607712617949-8c993d290809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBob3RlbCUyMHJvb218ZW58MXx8fHwxNTY3Nzg0ODYwfDA&ixlib=rb-4.1.0&q=80&w=1080'
   },
   {
     id: 2,
@@ -149,7 +149,7 @@ const hotelsToRate = [
     location: 'Tawang, Arunachal Pradesh',
     stayDate: 'Oct 2024',
     currentRating: 4,
-    image: 'https://images.unsplash.com/photo-1672560045744-17f136d4a21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNvcnQlMjBub3J0aGVhc3QlMjBpbmRpYXxlbnwxfHx8fDE3NTcxODQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral'
+    image: 'https://images.unsplash.com/photo-1672560045744-17f136d4a21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNvcnQlMjBub3J0aGVhc3QlMjBpbmRpYXxlbnwxfHx8fDE3NTcxODQ4MTd8MA&ixlib=rb-4.1.0&q=80&w=1080'
   }
 ];
 
@@ -161,7 +161,7 @@ const nearbyPlaces = [
     distance: '2.3 km',
     rating: 4.7,
     openStatus: 'Open',
-    image: 'https://images.unsplash.com/photo-1689947674001-f9a8a08f0480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMHRlbXBsZXxlbnwxfHx8fDE3NTcxODUxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: 'https://images.unsplash.com/photo-1689947674001-f9a8a08f0480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMHRlbXBsZXxlbnwxfHx8fDE3NTcxODUxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080',
     icon: 'temple'
   },
   {
@@ -171,7 +171,7 @@ const nearbyPlaces = [
     distance: '0.8 km',
     rating: 4.5,
     openStatus: 'Open',
-    image: 'https://images.unsplash.com/photo-1592693973461-cbdbcc153064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwY2FmZXxlbnwxfHx8fDE3NTcxODUxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: 'https://images.unsplash.com/photo-1592693973461-cbdbcc153064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwY2FmZXxlbnwxfHx8fDE3NTcxODUxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080',
     icon: 'restaurant'
   },
   {
@@ -181,7 +181,7 @@ const nearbyPlaces = [
     distance: '1.2 km',
     rating: 4.2,
     openStatus: '24/7',
-    image: 'https://images.unsplash.com/photo-1592693973461-cbdbcc153064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdWVsJTIwc3RhdGlvbnxlbnwxfHx8fDE3NTcxODUxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: 'https://images.unsplash.com/photo-1592693973461-cbdbcc153064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdWVsJTIwc3RhdGlvbnxlbnwxfHx8fDE3NTcxODUxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     icon: 'fuel'
   },
   {
@@ -191,7 +191,7 @@ const nearbyPlaces = [
     distance: '1.5 km',
     rating: 4.3,
     openStatus: 'Open',
-    image: 'https://images.unsplash.com/photo-1592693973461-cbdbcc153064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaG9wcGluZyUyMG1hcmtldHxlbnwxfHx8fDE3NTcxODUxODZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: 'https://images.unsplash.com/photo-1592693973461-cbdbcc153064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaG9wcGluZyUyMG1hcmtldHxlbnwxfHx8fDE3NTcxODUxODZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
     icon: 'shopping'
   }
 ];

@@ -35,7 +35,7 @@ import { Button } from "./ui/button";
 import { Badge as UIBadge } from "./ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./ui/ImageWithFallback";
 
 interface TravelGroupsPageProps {
   onBack: () => void;
@@ -59,7 +59,7 @@ const travelGroups = [
     },
     tags: ["Adventure", "Photography", "Cultural"],
     description: "Exploring the breathtaking landscapes and rich culture of Meghalaya. Perfect for adventure enthusiasts and photographers!",
-    image: "https://images.unsplash.com/photo-1608884941702-37653a75a725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWdoYWxheWElMjB3YXRlcmZhbGxzfGVufDF8fHx8MTc1NzE4MzA4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1608884941702-37653a75a725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWdoYWxheWElMjB3YXRlcmZhbGxzfGVufDF8fHx8MTc1NzE4MzA4MXww&ixlib=rb-4.1.0&q=80&w=1080",
     status: "open",
     isVerified: true,
     genderPreference: "mixed",
@@ -82,7 +82,7 @@ const travelGroups = [
     },
     tags: ["Wildlife", "Nature", "Photography"],
     description: "Wildlife safari adventure in Kaziranga National Park followed by cultural immersion in Majuli island.",
-    image: "https://images.unsplash.com/photo-1685948704813-da5c2f351167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3NhbSUyMHRlYSUyMGdhcmRlbnxlbnwxfHx8fDE3NTcxODMwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1685948704813-da5c2f351167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3NhbSUyMHRlYSUyMGdhcmRlbnxlbnwxfHx8fDE3NTcxODMwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
     status: "open",
     isVerified: true,
     genderPreference: "male-only",
@@ -105,7 +105,7 @@ const travelGroups = [
     },
     tags: ["Spiritual", "Mountain", "Cultural"],
     description: "Spiritual journey through ancient monasteries with stunning Himalayan views. Moderate trekking involved.",
-    image: "https://images.unsplash.com/photo-1568644559664-e4a5735c37ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMG1vdW50YWlucyUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NTcxODMwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1568644559664-e4a5735c37ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMG1vdW50YWlucyUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NTcxODMwNzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     status: "filling_fast",
     isVerified: false,
     genderPreference: "mixed",
@@ -128,7 +128,7 @@ const travelGroups = [
     },
     tags: ["Festival", "Cultural", "Food"],
     description: "Experience the vibrant Hornbill Festival in Nagaland with traditional music, dance, and authentic Naga cuisine.",
-    image: "https://images.unsplash.com/photo-1689947674001-f9a8a08f0480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMHRlbXBsZXxlbnwxfHx8fDE3NTcxODUxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1689947674001-f9a8a08f0480?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxub3J0aGVhc3QlMjBpbmRpYSUyMHRlbXBsZXxlbnwxfHx8fDE3NTcxODUxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
     status: "full",
     isVerified: true,
     genderPreference: "female-only",
@@ -151,7 +151,7 @@ const travelGroups = [
     },
     tags: ["Youth", "Backpacking", "Adventure"],
     description: "Budget-friendly backpacking trip for young travelers exploring Sikkim's natural beauty and monasteries.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaWtraW0lMjBtb3VudGFpbnN8ZW58MXx8fHwxNzU3MTgzMDc2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaWtraW0lMjBtb3VudGFpbnN8ZW58MXx8fHwxNzU3MTgzMDc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
     status: "open",
     isVerified: true,
     genderPreference: "mixed",
@@ -174,7 +174,7 @@ const travelGroups = [
     },
     tags: ["Leisure", "Tea Gardens", "Shopping"],
     description: "Relaxing trip for women featuring tea garden visits, heritage toy train rides, and local shopping experiences.",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJqZWVsaW5nJTIwdGVhJTIwZ2FyZGVufGVufDF8fHx8MTc1NzE4MzA3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJqZWVsaW5nJTIwdGVhJTIwZ2FyZGVufGVufDF8fHx8MTc1NzE4MzA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     status: "open",
     isVerified: true,
     genderPreference: "female-only",
